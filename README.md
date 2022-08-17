@@ -246,13 +246,13 @@ For Ethereum the final hashing part is slightly different and will need some adj
 
 ```Can i only do GPU Point Multiplication? I don't need to generate seeds / find hashes.```<br />
 Yes, you can just call **_PointMultiSecp256k1** function from your own custom kernel (and pass GTable from global memory)<br />
-Thus this repository can also be used as general-purpose Secp256k1 point multiplication system on GPUs.
+Thus this repository can also be used as general-purpose Secp256k1 point multiplication system on GPUs.<br />
 
-```Why is CUDA used instead of OpenCL?```
-The GPU Math operations designed by Jean Luc PONS are written for CUDA GPUs.
-It would be very hard to re-write them in OpenCL and have similar performance level.
+```Why is CUDA used instead of OpenCL?```<br />
+The GPU Math operations designed by Jean Luc PONS are written for CUDA GPUs.<br />
+It would be very hard to re-write them in OpenCL and have similar performance level.<br />
 
 ```Why isn't Mnemonic Phrase recovery included in this repository?```<br />
-Mostly because there are many different implementations of mnemonic phrases / wallets.
-Each crypto-exchange can use their own implementation with different salt / key-stretching / mnemonic-wordlists.
-However if you have that information then it should be trivial to modify this repository for mnemonic wallet recovery.
+Mostly because there are many different implementations of mnemonic phrases / wallets.<br />
+Each crypto-exchange can use their own implementation with different salt / key-stretching / mnemonic-wordlists.<br />
+However if you have that information then it should be trivial to modify this repository for mnemonic wallet recovery.<br />
