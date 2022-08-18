@@ -28,7 +28,8 @@ This includes:
 ## :spiral_notepad: Requirements
 - Linux Operating System
 - Nvidia GPU
-- Nvidia Cuda Toolkit installed
+- Nvidia Display Driver
+- Nvidia Cuda Toolkit
 
 ## :wrench: Quick Setup
 1. Clone or download the repository
@@ -37,7 +38,8 @@ This includes:
 4. Edit Makefile **CUDA** value to your Nvidia Cuda Toolkit directory
 5. Open terminal and run `make all` to generate the binaries (don't need administrator privileges)
 6. Run `./CudaBrainSecp` to launch the test cases (execution should take about ~3 seconds)
-7. You should see output with 112 iterations and ~50 succesfully found hashes + private keys
+7. You should see output with 112 iterations and ~50 succesfully found hashes + private keys<br /><br />
+If you see an error message `system has unsupported display driver / cuda driver combination` or `forward compatibility was attempted on non supporte HW` that means your cuda toolkit is incompatible with your display driver. (can try installing another display driver or another cuda toolkit version + restarting your PC).
 
 ## :gear: Configuration
 You will need to set-up your IDE (development environment) to link the Cuda Toolkit / dependencies.<br />
