@@ -258,9 +258,6 @@ int main(int argc, char **argv) {
 
 	loadGTable(gTableXCPU, gTableYCPU);
 
-	printf("%u \n",gTableXCPU[6]);
-	printf("%u \n",gTableYCPU[6]);
-
 	uint64_t* inputHashBufferCPU = new uint64_t[COUNT_INPUT_HASH];
 
 	loadInputHash(inputHashBufferCPU);
