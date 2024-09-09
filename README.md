@@ -1,4 +1,4 @@
-## FORK FROM https://github.com/kpurens  
+## This is not my project!! FORK FROM https://github.com/kpurens  
 
 # :brain: CudaBrainSecp
 Cuda Secp256k1 Brain Wallet Recovery Tool. <br/>
